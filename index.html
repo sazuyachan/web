@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <script>
-        const CONFIG_URL = "https://raw.githubusercontent.com/你的用户名/你的仓库/main/config.json";
-
-        fetch(CONFIG_URL + "?t=" + Date.now())
-            .then(res => res.json())
-            .then(data => {
-                location.replace(data.url);
-            })
-            .catch(() => {
-                document.body.innerText = "加载失败，请刷新";
-            });
-    </script>
-</head>
-<body></body>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            const url = "https://studio-lite-dude-across.trycloudflare.com";
+            location.replace(url);
+        </script>
+    </head>
+    <body>
+        
+    </body>
 </html>
